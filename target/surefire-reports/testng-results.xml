@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1927" started-at="2012-06-25T10:44:07Z" finished-at="2012-06-25T10:44:09Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1927" started-at="2012-06-25T10:44:07Z" finished-at="2012-06-25T10:44:09Z">
+      <class name="net.therap.dao.UserDaoTest">
+        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="144" started-at="2012-06-25T10:44:07Z" finished-at="2012-06-25T10:44:07Z">
+        </test-method>
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="1586" started-at="2012-06-25T10:44:07Z" finished-at="2012-06-25T10:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void net.therap.dao.UserDaoTest.testGetUser()]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testGetUser()" name="testGetUser" duration-ms="23" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+        </test-method>
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="12" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void net.therap.dao.UserDaoTest.testGetUser()]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="net.therap.web.MyPhotosControllerTest">
+        <test-method status="PASS" signature="unitilsBeforeClass()" name="unitilsBeforeClass" is-config="true" duration-ms="0" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+        </test-method>
+        <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+        </test-method>
+        <test-method status="PASS" signature="unitilsBeforeTestSetUp(java.lang.reflect.Method)" name="unitilsBeforeTestSetUp" is-config="true" duration-ms="98" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void net.therap.web.MyPhotosControllerTest.testShowPhotos() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testShowPhotos()" name="testShowPhotos" duration-ms="54" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+        </test-method>
+        <test-method status="PASS" signature="unitilsAfterTestTearDown(java.lang.reflect.Method)" name="unitilsAfterTestTearDown" is-config="true" duration-ms="4" started-at="2012-06-25T10:44:09Z" finished-at="2012-06-25T10:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void net.therap.web.MyPhotosControllerTest.testShowPhotos() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

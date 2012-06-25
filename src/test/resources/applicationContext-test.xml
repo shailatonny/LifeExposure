@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="org.unitils.database.UnitilsDataSourceFactoryBean"/>
+
+    <bean  id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="net.therap.domain"/>
+
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="userDao" class="net.therap.dao.UserDao" >
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="photoDao" class="net.therap.dao.PhotoDao" >
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="photoCommentDao" class="net.therap.dao.PhotoCommentDao" >
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="photoRatingDao" class="net.therap.dao.PhotoRatingDao" >
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+</beans>

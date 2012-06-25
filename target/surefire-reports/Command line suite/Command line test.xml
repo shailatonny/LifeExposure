@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="shaila" name="net.therap.dao.UserDaoTest" tests="2" failures="0" timestamp="25 Jun 2012 04:44:09 GMT" time="1.927" errors="0">
+  <testcase name="testGetUser" time="0.023" classname="net.therap.dao.UserDaoTest"/>
+  <testcase name="testShowPhotos" time="0.054" classname="net.therap.web.MyPhotosControllerTest"/>
+</testsuite>
